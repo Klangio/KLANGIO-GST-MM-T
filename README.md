@@ -1,6 +1,7 @@
 # A Multimodal Approach to Acoustic Guitar Strumming Action Transcription
+
 <p align="center">
-<img src="static/thumbnail_393_murgul.png" width="70%"/>
+<img src="static/thumbnail_393_murgul.png" width="60%"/>
 </p>
 
 Supplementary materials for ISMIR 2022 LBD submission:
@@ -32,9 +33,18 @@ The motion signal is recording using affordable hardware setup. The IMU used is 
 
 ## Evaluation of the Baseline Method
 
+A baseline method has been implemented which uses audio for strumming event detection and the hand motion signal for strumming direction classification.
+
 ```
 python scripts/evaluate.py
 ```
+
+### Evaluation Results
+
+| **Strumming Class** | **Precision** | **Recall** | **F1 Score** |
+|---------------------|---------------|------------|--------------|
+| Down strums         | 89.88%        | 94.53%     | 91.94%       |
+| Up strums           | 79.14%        | 93.07%     | 84.65%       |
 
 ## Attribution
 
